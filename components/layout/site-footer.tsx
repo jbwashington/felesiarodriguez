@@ -5,49 +5,16 @@ import Link from "next/link";
 import { buttonVariants } from "../ui/button";
 import { siteConfig } from "@/config/site";
 import { marketingConfig } from "@/config/marketing";
+import { Icons } from "../ui/icons";
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
     return (
         <footer className={cn("max-w-screen-xl mx-auto", className)}>
             <div className="container flex flex-col py-10 md:h-24">
-                <div className="grid grid-cols-2">
-                    <div className="flex flex-col items-end">
-                        {marketingConfig.footerNav.map((item) => (
-                            <Link
-                                key={item.title}
-                                href={item.href ?? "#"}
-                                className={buttonVariants({
-                                    variant: "link",
-                                    className:
-                                        "text-center text-sm md:text-left",
-                                })}
-                            >
-                                {item.title}
-                            </Link>
-                        ))}
-                    </div>
+                <div>
+                    <Icons.therapistFelesiaLogo className="h-20 w-fit mx-auto" />
                 </div>
                 <div className="inline-flex">
-                    <Link
-                        className={buttonVariants({
-                            variant: "link",
-                            className:
-                                "text-xs text-muted-foreground leading-loose",
-                        })}
-                        href="/terms"
-                    >
-                        Terms
-                    </Link>
-                    <Link
-                        className={buttonVariants({
-                            variant: "link",
-                            className:
-                                "text-xs text-muted-foreground leading-loose",
-                        })}
-                        href="/privacy"
-                    >
-                        Privacy Policy
-                    </Link>
                     <Link
                         className={buttonVariants({
                             variant: "link",
