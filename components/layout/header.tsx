@@ -10,7 +10,7 @@ export default function Header() {
         <MainNav items={siteConfig.mainNav} />
         <nav>
           <Link
-            href="/contact"
+            href="/booking"
             className={buttonVariants({
               variant: "outline",
               size: "sm",

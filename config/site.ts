@@ -14,21 +14,17 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-    name: "Wellness FelEsia",
-    description: "Wellness FelEsia is a ",
-    url: "https://wellnessfelesia.com",
-    ogImage: "https://wellnessfelesia.com/og.jpg",
+    name: "Therapist FelEsia",
+    description: "Offering mental health services to New York",
+    url: "https://therapistfelesia.com",
+    ogImage: "https://therapistfelesia.com/og.jpg",
     links: {
-        instagram: "https://instagram.com/wellnessfelesia",
+        instagram: "#",
     },
     mainNav: [
         {
             title: "About",
             href: "/about",
-        },
-        {
-            title: "Contact",
-            href: "/contact",
         },
     ],
 };
