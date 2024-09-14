@@ -4,7 +4,6 @@ import { ModeToggle } from "./mode-toggle";
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
 import { siteConfig } from "@/config/site";
-import { marketingConfig } from "@/config/marketing";
 import { Icons } from "../ui/icons";
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {

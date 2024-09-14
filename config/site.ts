@@ -14,7 +14,7 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-    name: "Therapist FelEsia",
+    name: "FelEsia Rodriguez LCSW",
     description: "Offering mental health services to New York",
     url: "https://therapistfelesia.com",
     ogImage: "https://therapistfelesia.com/og.jpg",
