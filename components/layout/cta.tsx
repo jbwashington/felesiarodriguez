@@ -1,36 +1,42 @@
-import Link from "next/link"
-import { buttonVariants } from "../ui/button"
-
+import Link from "next/link";
+import { buttonVariants } from "../ui/button";
 
 export const CTA = () => {
     return (
-                <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-                    <div className="container px-4 md:px-6">
-                        <div className="flex flex-col items-center space-y-4 text-center">
-                            <div className="space-y-2">
-                                <h1 className="text-3xl font-bold tracking-tighter">
-                                FelEsia Rodriguez, LCSW
-                                </h1>
-                                <p className="mx-auto text-muted-foreground">
-                                    Empowering you to overcome challenges and
-                                    live your best life through compassionate
-                                    therapy.
-                                </p>
-                            </div>
-                            <div className="space-x-4">
-                                <Link
-                                    href="#contact"
-                                    className={buttonVariants({
-                                        variant: "default",
-                                        className:
-                                            "bg-[#c9a55c] text-[#0a3a3a] hover:bg-[#b08d3f]",
-                                    })}
-                                >
-                                    Book a Session
-                                </Link>
-                            </div>
+        <section className="w-full h-screen ">
+            <div
+                className="relative flex items-center 
+        justify-center h-screen overflow-hidden "
+            >
+                <video
+                    src="/videos/beach.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    className="absolute z-0 w-auto 
+            min-w-full min-h-full max-w-none  backdrop-brightness-50"
+                ></video>
+                <div className="container px-4 md:px-6 py-auto z-10 max-w-screen-md">
+                    <div className="flex flex-col space-y-4">
+                        <div className="space-y-2">
+                            <p className="text-8xl font-bold tracking-tighter">
+                            You deserve peace and healing.
+                            </p>
+                        </div>
+                        <div className="space-x-4">
+                            <Link
+                                href="/booking"
+                                className={buttonVariants({
+                                    variant: "default",
+                                    size: "lg",
+                                })}
+                            >
+                                Book a free consultation
+                            </Link>
                         </div>
                     </div>
-                </section>
+                </div>
+            </div>
+        </section>
     );
 };

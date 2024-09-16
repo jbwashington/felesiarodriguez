@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const About = () => {
     return (
-        <section className="w-full py-12 mx-auto">
+        <section className="max-w-screen-lg py-12 mx-auto ">
             <div className="container px-4 md:px-6">
                 <div className="flex flex-col justify-center space-y-4 max-w-screen-xl">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -14,7 +14,7 @@ export const About = () => {
                             alt="FelEsia Rodriguez"
                             width={200}
                             height={200}
-                            className="rounded-lg"
+                            className="rounded-full"
                         />
                         <p className="max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                             FelEsia Rodriguez is a licensed therapist with over

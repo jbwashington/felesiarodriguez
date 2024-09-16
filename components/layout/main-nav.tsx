@@ -8,6 +8,7 @@ import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Icons } from "../ui/icons"
 import { MobileNav } from "./mobile-nav"
+import { HamburgerMenuIcon } from "@radix-ui/react-icons"
 
 interface MainNavProps {
   items?: MainNavItem[];
@@ -21,7 +22,7 @@ export function MainNav({ items, children }: MainNavProps) {
     return (
         <div className="flex gap-6 md:gap-10">
             <Link href="/" className="hidden items-center space-x-2 md:flex">
-                <Icons.therapistFelesiaLogo className="w-fit h-20 p-2" />
+                <Icons.therapistFelesiaLogo className="w-12 h-fit ml-2" />
             </Link>
             {items?.length ? (
                 <nav className="hidden gap-6 md:flex">
@@ -51,7 +52,14 @@ export function MainNav({ items, children }: MainNavProps) {
                 ) : (
                     <Icons.therapistFelesiaLogo className="w-fit h-20 p-2" />
                 )}
-                <span className="font-bold">Menu</span>
+                <span className="font-bold">
+                    <HamburgerMenuIcon
+                        className={cn({
+                            hidden: showMobileMenu,
+                            block: !showMobileMenu,
+                        })}
+                    />
+                </span>
             </button>
             {showMobileMenu && items && (
                 <MobileNav items={items}>{children}</MobileNav>

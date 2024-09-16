@@ -3,14 +3,16 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
 import { RelaxButton } from "./relax-button";
+import { Separator } from "../ui/separator";
 
 export default function Header() {
   return (
-    <header className="container z-40 bg-background">
+    <header className="container z-20 relative bg-background">
       <div className="flex h-20 items-center justify-between py-6">
         <MainNav items={siteConfig.mainNav} />
-        <nav className="space-y-2">
+        <nav className="space-y-2 inline-flex align-middle">
         <RelaxButton />
+        <Separator orientation="vertical" />
           <Link
             href="/booking"
             className={buttonVariants({

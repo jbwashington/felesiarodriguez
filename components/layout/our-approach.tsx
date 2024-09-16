@@ -1,16 +1,15 @@
 export const OurApproach = () => {
     return (
         <section
-            id="our-approach"
-            className="w-full py-12 md:py-24 lg:py-32 bg-[#0a3a3a] text-white"
+            className="w-full p-12 md:py-24 lg:py-32"
         >
             <div className="container px-4 md:px-6">
                 <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-                    <div className="flex flex-col justify-center space-y-4">
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#c9a55c]">
+                    <div className="flex flex-col justify-center space-y-4  max-w-screen-lg">
+                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                             Our Approach
                         </h2>
-                        <p className="max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                        <p className="md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                             I don’t believe that therapists are supposed to be a
                             blank slate. I come to you with years of
                             professional experience in mental health and youth
