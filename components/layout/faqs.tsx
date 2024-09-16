@@ -8,8 +8,8 @@ import Link from "next/link";
 
 export const FAQs = () => {
     return (
-        <div className="max-w-screen-lg mx-auto space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+        <div className="max-w-screen-md mx-auto space-y-2 p-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl capitalize text-center py-6">
                 Frequently Asked Questions
             </h2>
             <Accordion type="single" collapsible>
