@@ -7,6 +7,9 @@ export const CTA = () => {
             <div className="relative flex items-center justify-center h-screen overflow-hidden">
                 <div className="container px-4 md:px-6 py-auto z-10 max-w-screen-sm">
                     <div className="flex flex-col space-y-6">
+                        <p className="text-2xl text-muted-foreground capitalize">
+                        Individual and couples
+                        </p>
                         <h2 className="text-8xl font-bold tracking-tighter">
                             You deserve peace and healing
                         </h2>
