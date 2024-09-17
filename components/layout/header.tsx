@@ -11,14 +11,12 @@ export default function Header() {
       <div className="flex h-20 items-center justify-between py-6">
         <MainNav items={siteConfig.mainNav} />
         <nav className="space-y-2 inline-flex align-middle">
-        <RelaxButton />
-        <Separator orientation="vertical" />
           <Link
             href="/booking"
             className={buttonVariants({
               variant: "outline",
               size: "sm",
-              className: "capitalize",
+              className: "capitalize mr-2",
             })}
           >
             Book a session
