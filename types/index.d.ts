@@ -64,31 +64,35 @@ export type DocsConfig = {
 
 export type FooterNavItem = SidebarNavItem
 
-export type DashboardConfig = {
-  mainNav: MainNavItem[]
-  sidebarNav: SidebarNavItem[]
+export type FooterConfig = {
+    footerNav: NavItem[]
 }
+
+// export type DashboardConfig = {
+//   mainNav: MainNavItem[]
+//   sidebarNav: SidebarNavItem[]
+// }
 
 export interface MainNavProps {
   items?: MainNavItem[];
   children?: React.ReactNode;
 }
-export type DashboardConfig = {
-  mainNav: MainNavItem[]
-  sidebarNav: SidebarNavItem[]
-}
+// export type DashboardConfig = {
+//   mainNav: MainNavItem[]
+//   sidebarNav: SidebarNavItem[]
+// }
 
-export type SubscriptionPlan = {
-  name: string
-  description: string
-  stripePriceId: string
-}
+// export type SubscriptionPlan = {
+//   name: string
+//   description: string
+//   stripePriceId: string
+// }
 
-export type UserSubscriptionPlan = SubscriptionPlan &
-  Pick<User, "stripeCustomerId" | "stripeSubscriptionId"> & {
-    stripeCurrentPeriodEnd: number
-    isPro: boolean
-  }
+// export type UserSubscriptionPlan = SubscriptionPlan &
+//   Pick<User, "stripeCustomerId" | "stripeSubscriptionId"> & {
+//     stripeCurrentPeriodEnd: number
+//     isPro: boolean
+//   }
 
   export type DocsConfig = {
     mainNav: MainNavItem[]

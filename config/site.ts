@@ -51,8 +51,8 @@ export const siteConfig: SiteConfig = {
             href: "/about",
         },
         {
-            title: "Services",
-            href: "/services"
+            title: "My Approach",
+            href: "/my-approach"
         },
         {
             title: "FAQs",

@@ -14,15 +14,17 @@ export default function HomePage() {
                 Frequently asked questions
             </h2>
             <FAQs />
-            <h2 className="text-6xl font-bold tracking-tighter  max-w-screen-md  mx-auto">
-                I&apos;m honored to accompany you on your journey.
-            </h2>
-            <p className="leading-relaxed text-xl text-muted-foreground  max-w-screen-md  mx-auto">
-                Let&apos;s figure it out together. Schedule a{" "}
-                <b>free 15 minute consultation</b> to discuss your needs and
-                goals.
-            </p>
-            <BookASession />
+            <div className="px-4 py-auto max-w-screen-sm space-y-8">
+                <h2 className="text-6xl font-bold tracking-tighter  max-w-screen-md  mx-auto">
+                    I&apos;m honored to accompany you on your journey.
+                </h2>
+                <p className="leading-relaxed text-xl text-muted-foreground  max-w-screen-md  mx-auto">
+                    Let&apos;s figure it out together. Schedule a{" "}
+                    <b>free 15 minute consultation</b> to discuss your needs and
+                    goals.
+                </p>
+                <BookASession />
+            </div>
         </div>
     );
 }
