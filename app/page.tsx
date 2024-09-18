@@ -14,7 +14,7 @@ export default function HomePage() {
                 Frequently asked questions
             </h2>
             <FAQs />
-            <div className="px-4 py-auto max-w-screen-sm space-y-8">
+            <div className="px-4 py-auto max-w-screen-lg space-y-8 mx-auto">
                 <h2 className="text-6xl font-bold tracking-tighter  max-w-screen-md  mx-auto">
                     I&apos;m honored to accompany you on your journey.
                 </h2>
