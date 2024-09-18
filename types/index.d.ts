@@ -64,11 +64,6 @@ export type DocsConfig = {
 
 export type FooterNavItem = SidebarNavItem
 
-export type MarketingConfig = {
-  mainNav: MainNavItem[]
-  footerNav: FooterNavItem[]
-}
-
 export type DashboardConfig = {
   mainNav: MainNavItem[]
   sidebarNav: SidebarNavItem[]

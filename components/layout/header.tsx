@@ -8,11 +8,11 @@ import { Separator } from "../ui/separator";
 export default function Header() {
   return (
     <header className="container z-20 relative bg-background">
-      <div className="flex h-20 items-center justify-between py-6">
+      <div className="flex h-20 items-center justify-between py-6 max-w-screen-lg mx-auto">
         <MainNav items={siteConfig.mainNav} />
         <nav className="space-y-2 inline-flex align-middle">
           <Link
-            href="/booking"
+            href="/contact"
             className={buttonVariants({
               variant: "outline",
               size: "sm",

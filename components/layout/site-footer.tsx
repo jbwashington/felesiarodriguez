@@ -9,30 +9,47 @@ import { Separator } from "../ui/separator";
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
     return (
-<>
-<Separator className="max-w-screen-xl mx-auto my-4" />
-        <footer className={cn("max-w-screen-xl mx-auto", className)}>
-            <div className="container flex flex-col py-10 md:h-24">
-                <div>
-                    <Icons.therapistFelesiaLogo className="h-20 w-fit mx-auto" />
+        <>
+            <Separator className="max-w-screen-xl mx-auto my-4" />
+            <footer className={cn("max-w-screen-xl mx-auto", className)}>
+                <div className="container flex flex-col py-10 md:h-24">
+                    <div>
+                        <Icons.therapistFelesiaLogo className="h-20 w-fit mx-auto" />
+                    </div>
+                    <div className="flex *:flex-1 flex-col md:flex-row gap-4">
+                        <Link
+                            href={`tel:${siteConfig.phone}`}
+                            className="text-center"
+                        >
+                            {siteConfig.phone}
+                        </Link>
+                        <Link
+                            href={`mailto:${siteConfig.email}`}
+                            className="text-center"
+                        >
+                            {siteConfig.email}
+                        </Link>
+                        <p className="text-center">
+                            NPI#: <span>{siteConfig.NPI}</span>
+                        </p>
+                    </div>
+                    <div className="inline-flex">
+                        <Link
+                            className={buttonVariants({
+                                variant: "link",
+                                className:
+                                    "text-xs text-muted-foreground leading-loose mx-auto",
+                            })}
+                            href="/"
+                        >
+                            Copyright {siteConfig.name} 2024-2025.
+                        </Link>
+                    </div>
+                    <div className="mx-auto">
+                        <ModeToggle />
+                    </div>
                 </div>
-                <div className="inline-flex">
-                    <Link
-                        className={buttonVariants({
-                            variant: "link",
-                            className:
-                                "text-xs text-muted-foreground leading-loose mx-auto",
-                        })}
-                        href="/"
-                    >
-                        Copyright {siteConfig.name} 2024-2025.
-                    </Link>
-                </div>
-                <div className="mx-auto">
-                    <ModeToggle />
-                </div>
-            </div>
-        </footer>
-</>
+            </footer>
+        </>
     );
 }

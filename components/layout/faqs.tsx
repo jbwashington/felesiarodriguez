@@ -4,23 +4,11 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import Link from "next/link";
-import {
-    Table,
-    TableBody,
-    TableCaption,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow,
-} from "@/components/ui/table";
+import { FAQsTable } from "./faqs-table";
 
 export const FAQs = () => {
     return (
         <div className="max-w-screen-md mx-auto space-y-2 p-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl capitalize text-center py-6">
-                Frequently Asked Questions
-            </h2>
             <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
                     <AccordionTrigger>What is therapy?</AccordionTrigger>
@@ -73,101 +61,26 @@ export const FAQs = () => {
                 </AccordionItem>
                 <AccordionItem value="item-3">
                     <AccordionTrigger>
-                        What areas do you serve?
+                        How much is a session? How long is a session?
                     </AccordionTrigger>
                     <AccordionContent>
-                        <p className="my-4">
-                            I offer virtual therapy sessions to anyone in New
-                            York State, including:
-                        </p>
-                        <Table>
-                            <TableBody>
-                                <TableRow>
-                                    <TableCell className="font-medium">
-                                        Capital/Saratoga
-                                    </TableCell>
-                                    <TableCell className="font-normal">
-                                        Albany
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell className="font-medium">
-                                        Eastern Adirondacks
-                                    </TableCell>
-                                    <TableCell className="font-normal">
-                                        Plattsburgh
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell className="font-medium">
-                                        Western Adirondacks
-                                    </TableCell>
-                                    <TableCell className="font-normal">
-                                        Watertown
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell className="font-medium">
-                                        Central New York
-                                    </TableCell>
-                                    <TableCell className="font-normal">
-                                        Syracuse
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell className="font-medium">
-                                        Finger Lakes
-                                    </TableCell>
-                                    <TableCell className="font-normal">
-                                        Rochester
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell className="font-medium">
-                                        Western New York
-                                    </TableCell>
-                                    <TableCell className="font-normal">
-                                        Buffalo
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell className="font-medium">
-                                        Hudson Valley
-                                    </TableCell>
-                                    <TableCell className="font-normal">
-                                        Kingston
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell className="font-medium">
-                                        Westchester/Rockland
-                                    </TableCell>
-                                    <TableCell className="font-normal">
-                                        White Plains
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell className="font-medium">
-                                        Long Island
-                                    </TableCell>
-                                    <TableCell className="font-normal">
-                                        Hauppauge
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell className="font-medium">
-                                        New York City
-                                    </TableCell>
-                                    <TableCell className="font-normal">
-                                        Brooklyn, Manhattan, Bronx, Queens, and
-                                        Staten Island
-                                    </TableCell>
-                                </TableRow>
-                            </TableBody>
-                        </Table>
+                        Individual therapy sessions are <b>$150 / 45 minutes</b>
+                        .{" "}
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
+                    <AccordionTrigger>
+                        What areas do you serve?
+                    </AccordionTrigger>
+                    <AccordionContent>
+                        <p className="my-5">
+                            I offer virtual therapy sessions to anyone in New
+                            York State, including:
+                        </p>
+                        <FAQsTable />
+                    </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-5">
                     <AccordionTrigger>
                         What is the time commitment?
                     </AccordionTrigger>
@@ -178,57 +91,61 @@ export const FAQs = () => {
                         schedule is meeting your needs.
                     </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="item-5">
+                <AccordionItem value="item-6">
                     <AccordionTrigger>
                         What is your cancellation policy?
                     </AccordionTrigger>
                     <AccordionContent>
                         I make all efforts to accommodate requests to reschedule
-                        a session with 24 hours advance notice. <b>A late
-                        cancellation fee of $150 will be charged if appointments
-                        are canceled with less than 24 hours notice, or if you
-                        are more than 10 minutes late to your session without
-                        notifying your therapist.</b> I understand that emergencies
-                        come up in life and I offer two fee waivers per year for
-                        your convenience.
+                        a session with 24 hours advance notice.{" "}
+                        <b>
+                            A late cancellation fee of $150 will be charged if
+                            appointments are canceled with less than 24 hours
+                            notice, or if you are more than 10 minutes late to
+                            your session without notifying your therapist.
+                        </b>{" "}
+                        I understand that emergencies come up in life and I
+                        offer two fee waivers per year for your convenience.
                     </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="item-6">
+                <AccordionItem value="item-7">
                     <AccordionTrigger>
                         Do you accept insurance?
                     </AccordionTrigger>
                     <AccordionContent className="space-y-2">
-<p>
-                        No, I do not accept insurance. Payments must be received
-                        at least four hours prior to our session. If you wish to
-                        submit a claim for out-of-network reimbursement, I can
-                        give you a receipt or superbill to help facilitate any
-                        reimbursement you may be entitled to. Please note that
-                        submitting an insurance claim means I will need to give
-                        you a mental health diagnosis and that confidential
-                        records could potentially be submitted to insurance.
-</p>
-<p>
-                        As a therapist, I&apos;m opposed to common industry
-                        practices such as recording a diagnosis after the first
-                        session on a person&apos;s official medical record after
-                        only having a substantive 30 minute conversation with
-                        them. I prioritize co-creating treatment plans with my
-                        clients, and deciding if they prefer longer or shorter
-                        sessions, or even the frequency of their sessions, which
-                        I cannot do under the scrutiny of insurance companies.
-                        Additionally, it is difficult to maintain full
-                        confidentiality when insurance reserves the right to
-                        review client records at any time. They may also decide
-                        to stop paying, or seek recoupments, or
-                        &quot;clawbacks&quot; after services have been rendered,
-                        which then disrupts the therapeutic nature of
-                        client/therapist relationship and the consistency of
-                        sessions.
-</p>
+                        <p>
+                            No, I do not accept insurance. Payments must be
+                            received at least four hours prior to our session.
+                            If you wish to submit a claim for out-of-network
+                            reimbursement, I can give you a receipt or superbill
+                            to help facilitate any reimbursement you may be
+                            entitled to. Please note that submitting an
+                            insurance claim means I will need to give you a
+                            mental health diagnosis and that confidential
+                            records could potentially be submitted to insurance.
+                        </p>
+                        <p>
+                            As a therapist, I&apos;m opposed to common industry
+                            practices such as recording a diagnosis after the
+                            first session on a person&apos;s official medical
+                            record after only having a substantive 30 minute
+                            conversation with them. I prioritize co-creating
+                            treatment plans with my clients, and deciding if
+                            they prefer longer or shorter sessions, or even the
+                            frequency of their sessions, which I cannot do under
+                            the scrutiny of insurance companies. Additionally,
+                            it is difficult to maintain full confidentiality
+                            when insurance reserves the right to review client
+                            records at any time. They may also decide to stop
+                            paying, or seek recoupments, or
+                            &quot;clawbacks&quot; after services have been
+                            rendered, which then disrupts the therapeutic nature
+                            of client/therapist relationship and the consistency
+                            of sessions.
+                        </p>
                     </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="item-7">
+                <AccordionItem value="item-8">
                     <AccordionTrigger>
                         How can I pay for services?
                     </AccordionTrigger>
@@ -242,3 +159,4 @@ export const FAQs = () => {
         </div>
     );
 };
+// Individual therapy sessions are $170 / 50 minutes. Good Faith Estimates provided with intake documents.

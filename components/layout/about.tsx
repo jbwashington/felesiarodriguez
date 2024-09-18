@@ -3,11 +3,8 @@ import { Separator } from "../ui/separator";
 
 export const About = () => {
     return (
-        <section className="max-w-screen-lg p-6 mx-auto ">
+        <section className="max-w-screen-md mx-auto space-y-2 p-6">
             <div className="flex flex-col justify-center space-y-4 max-w-screen-xl">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl capitalize text-center py-4">
-                    About FelEsia Rodriguez
-                </h2>
                 <div className="grid md:grid-cols-2 gap-8">
                     <Image
                         src="/images/headshot.png"
