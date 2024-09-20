@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
 import { Icons } from "../ui/icons";
+import { cn } from "@/lib/utils";
 export const CTA = () => {
     return (
         <section className="w-full">
@@ -10,7 +11,13 @@ export const CTA = () => {
                         <p className="font-medium text-md font-mono uppercase text-muted-foreground">
                             Individuals and couples
                         </p>
-                        <h2 className="text-7xl md:text-8xl font-bold tracking-tighter">
+                        <h2
+                            className={cn(
+                                "text-transparent bg-clip-text", 
+                                "text-7xl md:text-8xl font-bold tracking-tighter",
+                                " bg-gradient-to-tr from-primary via-orange-950 to-orange-200",
+                            )}
+                        >
                             Let me help you create the life you deserve.
                         </h2>
                         <p className="leading-relaxed text-muted-foreground text-md">

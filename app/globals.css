@@ -13,7 +13,6 @@
     /* Name: custom color palette
        Author: Ilias Ism
        URL: https://gradient.page */
-    /* CSS: .bg-gradient { background: var(--gradient) } */
     --gradient: linear-gradient(to top left,#603813,#b29f94);
     --background: 31 98.35% 98.46%;
     --foreground: 31 6.7% 0.92%;
