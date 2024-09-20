@@ -4,47 +4,49 @@ import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
 
 export const BookingForm = () => {
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({ namespace: "15min" });
-      cal("ui", {
-        layout: "month_view",
-        hideEventTypeDetails: true,
-        // More CSS variables are defined here
-        // https://github.com/calcom/cal.com/blob/b0ca7dae1a17f897e34b83c990f30ab65f615ee0/packages/config/tailwind-preset.js#L69
-        cssVarsPerTheme: {
-          light: {
-            "cal-brand": "hsl(0 0% 9%)", // primary
-            "cal-text": "hsl(0 0% 3.9%)", // foreground
-            "cal-text-emphasis": "hsl(0 0% 9%)", // accent-foreground
-            "cal-text-muted": "hsl(0 0% 45.1%)", // muted-foreground
-            "cal-bg": "hsl(0 0% 100%)", // background
-            "cal-bg-emphasis": "hsl(0 0% 96.1%)", // accent
-            "cal-bg-muted": "hsl(0 0% 96.1%)", // muted
-            scrollbar: "rounded",
-          },
-          dark: {
-            "cal-brand": "hsl(0 0% 98%)", // primary
-            "cal-text": "hsl(0 0% 98%)", // foreground
-            "cal-text-emphasis": "hsl(0 0% 98%)", // accent-foreground
-            "cal-text-muted": "hsl(0 0% 63.9%)", // muted-foreground
-            "cal-bg": "hsl(0 0% 3.9%)", // background
-            "cal-bg-emphasis": "hsl(0 0% 14.9%)", // accent
-            "cal-bg-muted": "hsl(0 0% 14.9%)", // muted
-            scrollbar: "dark",
-          },
-        },
-      });
-    })();
-  }, []);
+    useEffect(() => {
+        (async function () {
+            const cal = await getCalApi({ namespace: "15min" });
+            cal("ui", {
+                layout: "month_view",
+                hideEventTypeDetails: true,
+                // More CSS variables are defined here
+                // https://github.com/calcom/cal.com/blob/b0ca7dae1a17f897e34b83c990f30ab65f615ee0/packages/config/tailwind-preset.js#L69
+                cssVarsPerTheme: {
+                    light: {
+                        "cal-brand": "hsl(31 67% 23%)", // primary
+                        "cal-text": "hsl(31 6.7% 0.92%)", // foreground
+                        "cal-text-emphasis":
+                            "hsl(31 5.0200000000000005% 12.3%)", // accent-foreground
+                        "cal-text-muted": "hsl(31 3.35% 42.3%)", // muted-foreground
+                        "cal-bg": "hsl(31 98.35% 98.46%)", // background
+                        "cal-bg-emphasis": "hsl(31 3.35% 96.15%)", // accent
+                        "cal-bg-muted": "hsl(31 6.7% 92.3%)", // muted
+                        scrollbar: "rounded",
+                    },
+                    dark: {
+                        "cal-brand": "hsl(31 67% 23%)", // primary
+                        "cal-text": "hsl(31 6.7% 0.92%)", // foreground
+                        "cal-text-emphasis":
+                            "hsl(31 5.0200000000000005% 12.3%)", // accent-foreground
+                        "cal-text-muted": "hsl(31 3.35% 42.3%)", // muted-foreground
+                        "cal-bg": "hsl(31 98.35% 98.46%)", // background
+                        "cal-bg-emphasis": "hsl(31 3.35% 96.15%)", // accent
+                        "cal-bg-muted": "hsl(31 6.7% 92.3%)", // muted
+                        scrollbar: "rounded",
+                    },
+                },
+            });
+        })();
+    }, []);
 
-  return (
-    <>
-      <Cal
-        namespace="15min"
-        config={{ layout: "month_view" }}
-        calLink="therapistfelesia/15min"
-      />
-    </>
-  );
+    return (
+        <>
+            <Cal
+                namespace="15min"
+                config={{ layout: "month_view" }}
+                calLink="therapistfelesia/15min"
+            />
+        </>
+    );
 };
