@@ -7,7 +7,7 @@ import { Separator } from "../ui/separator";
 
 export default function Header() {
   return (
-    <header className="container z-20 relative bg-background">
+    <header className="container relative">
       <div className="flex h-20 items-center justify-between py-6 max-w-screen-lg mx-auto">
         <MainNav items={siteConfig.mainNav} />
         <nav className="space-y-2 inline-flex align-middle">
@@ -19,7 +19,7 @@ export default function Header() {
               className: "capitalize mr-2",
             })}
           >
-            Book a session
+            Book a consultation
           </Link>
         </nav>
       </div>

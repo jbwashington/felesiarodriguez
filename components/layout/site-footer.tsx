@@ -12,7 +12,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
         <footer className={cn("max-w-screen-md mx-auto", className)}>
             <div className="container flex flex-col md:h-24 space-y-4 pb-6">
                 <div className="grid grid-cols-1 md:grid-cols-2">
-                    <Icons.therapistFelesiaLogo className="w-1/3 md:w-1/2 h-fit mx-auto md:mr-auto py-4" />
+                    <Icons.therapistFelesiaLogo className="w-1/3 md:w-1/2 h-fit mx-auto md:mr-auto" />
                     <div className="flex flex-col items-center md:items-end">
                         <div className="flex flex-col items-center md:items-end py-8">
                             <h3 className="text-lg font-bold uppercase">
@@ -66,19 +66,20 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
                             >
                                 {siteConfig.email}
                             </Link>
+                            <p
+                                className={buttonVariants({
+                                    variant: "link",
+                                    size: "sm",
+                                    className:
+                                        "text-xs text-center md:ml-auto text-muted-foreground",
+                                })}
+                            >
+                                NPI #{siteConfig.NPI}
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div className="flex flex-col md:justify-between gap-4">
-                    <p
-                    className={buttonVariants({
-                        variant: "link",
-                        size: "sm",
-                        className: "text-xs text-center md:ml-auto text-muted-foreground",
-                    })}
-                    >
-                        NPI #{siteConfig.NPI}
-                    </p>
                     <Link
                         className="text-xs text-center text-muted-foreground"
                         href="/"

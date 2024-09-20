@@ -18,7 +18,7 @@ export const About = () => {
                             orientation="vertical"
                             className="hidden h-full mr-6 md:block"
                         />
-                        <p className="leading-loose text-xl text-muted-foreground">
+                        <p className="leading-loose text-xl text-muted-foreground max-w-screen-md">
                             FelEsia Rodriguez is a licensed therapist with over
                             10 years of experience. She specializes in helping
                             individuals and couples overcome challenges and
