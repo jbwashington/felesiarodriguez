@@ -7,18 +7,20 @@ export const CTA = () => {
             <div className="relative flex items-center justify-center h-screen overflow-hidden">
                 <div className="container px-4 md:px-6 py-auto z-10 max-w-screen-sm">
                     <div className="flex flex-col space-y-6">
-                        <p className="font-mono uppercase text-muted-foreground">Individuals and couples</p>
-                        <h2 className="text-6xl font-bold tracking-tighter">
-                        Let me help you create the life you deserve.
+                        <p className="font-light text-md font-mono uppercase text-muted-foreground">
+                            Individuals and couples
+                        </p>
+                        <h2 className="text-4xl font-bold tracking-tighter">
+                            Let me help you create the life you deserve.
                         </h2>
-                        <p className="leading-relaxed text-xl text-muted-foreground">
-                        Online therapy services for the NYC area and all over New York State.
+                        <p className="leading-relaxed text-muted-foreground text-md">
+                            Online therapy services for the NYC area and all
+                            over New York State.
                         </p>
                         <Link
                             href="/booking"
                             className={buttonVariants({
                                 variant: "default",
-                                size: "lg",
                                 className: "capitalize w-fit",
                             })}
                         >
