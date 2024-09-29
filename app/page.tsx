@@ -18,7 +18,7 @@ export default function HomePage() {
                 <h2 className="text-6xl font-bold tracking-tighter  max-w-screen-lg  mx-auto">
                     I&apos;m honored to accompany you on your journey.
                 </h2>
-                <p className="leading-relaxed text-xl text-muted-foreground  max-w-screen-lg  mx-auto">
+                <p className="leading-relaxed text-xl text-muted-foreground max-w-screen-lg mx-auto">
                     Let&apos;s figure it out together. Schedule a{" "}
                     <b>free 15 minute consultation</b> to discuss your needs and
                     goals.

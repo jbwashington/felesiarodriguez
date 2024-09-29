@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { TailwindIndicator } from "@/components/layout/tailwind-indicator";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { Toaster } from "@/components/ui/toaster";
+import { AudioMixer } from "@/components/layout/audio-mixer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,7 @@ export default function RootLayout({
                     <Analytics />
                 </div>
                 <SiteFooter />
+                <AudioMixer />
                 <Toaster />
                 <TailwindIndicator />
             </body>

@@ -43,6 +43,10 @@ import {
     CloudCog,
     DatabaseBackup,
     Router,
+    Droplets,
+    GlassWater,
+    Play,
+    Pause,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -62,9 +66,13 @@ export const Icons = {
     billing: CreditCard,
     ellipsis: MoreVertical,
     add: Plus,
+    rain: Droplets,
+    river: GlassWater,
     warning: AlertTriangle,
     user: User,
     arrowRight: ArrowRight,
+    play: Play,
+    pause: Pause,
     help: HelpCircle,
     pizza: Pizza,
     sun: SunMedium,
