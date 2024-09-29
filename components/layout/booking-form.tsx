@@ -14,25 +14,23 @@ export const BookingForm = () => {
                 // https://github.com/calcom/cal.com/blob/b0ca7dae1a17f897e34b83c990f30ab65f615ee0/packages/config/tailwind-preset.js#L69
                 cssVarsPerTheme: {
                     light: {
-                        "cal-brand": "hsl(31 67% 23%)", // primary
-                        "cal-text": "hsl(31 6.7% 0.92%)", // foreground
-                        "cal-text-emphasis":
-                            "hsl(31 5.0200000000000005% 12.3%)", // accent-foreground
-                        "cal-text-muted": "hsl(31 3.35% 42.3%)", // muted-foreground
-                        "cal-bg": "hsl(31 98.35% 98.46%)", // background
-                        "cal-bg-emphasis": "hsl(31 3.35% 96.15%)", // accent
-                        "cal-bg-muted": "hsl(31 6.7% 92.3%)", // muted
+                        "cal-brand": "hsl(220 100% 56%)", // primary
+                        "cal-text": "hsl(228 7.5% 0.56%)", // foreground
+                        "cal-text-emphasis": "hsl(220 10% 97.8%;)", // accent-foreground
+                        "cal-text-muted": "hsl(220 10% 55.6%)", // muted-foreground
+                        "cal-bg": "hsl(228 98.75% 98.28%)", // background
+                        "cal-bg-emphasis": "hsl(220 50% 16.8%)", // accent
+                        "cal-bg-muted": "hsl(220 50% 16.8%)", // muted
                         scrollbar: "rounded",
                     },
                     dark: {
-                        "cal-brand": "hsl(31 67% 23%)", // primary
-                        "cal-text": "hsl(31 6.7% 0.92%)", // foreground
-                        "cal-text-emphasis":
-                            "hsl(31 5.0200000000000005% 12.3%)", // accent-foreground
-                        "cal-text-muted": "hsl(31 3.35% 42.3%)", // muted-foreground
-                        "cal-bg": "hsl(31 98.35% 98.46%)", // background
-                        "cal-bg-emphasis": "hsl(31 3.35% 96.15%)", // accent
-                        "cal-bg-muted": "hsl(31 6.7% 92.3%)", // muted
+                        "cal-brand": "hsl(220 100% 56%)", // primary
+                        "cal-text": "hsl(228 7.5% 0.56%)", // foreground
+                        "cal-text-emphasis": "hsl(220 10% 97.8%;)", // accent-foreground
+                        "cal-text-muted": "hsl(220 10% 55.6%)", // muted-foreground
+                        "cal-bg": "hsl(228 98.75% 98.28%)", // background
+                        "cal-bg-emphasis": "hsl(220 50% 16.8%)", // accent
+                        "cal-bg-muted": "hsl(220 50% 16.8%)", // muted
                         scrollbar: "rounded",
                     },
                 },
