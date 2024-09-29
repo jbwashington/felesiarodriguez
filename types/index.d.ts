@@ -5,22 +5,6 @@ import type { Icon } from "lucide-react"
 import type { Header } from '@/payload-types'
 import { Icons } from "@/components/icons"
 
-export interface MediaProps {
-  alt?: string
-  className?: string
-  fill?: boolean // for NextImage only
-  htmlElement?: ElementType | null
-  imgClassName?: string
-  onClick?: () => void
-  onLoad?: () => void
-  priority?: boolean // for NextImage only
-  ref?: Ref<HTMLImageElement | HTMLVideoElement | null>
-  resource?: MediaType | string // for Payload media
-  sizes?: string // for NextImage only
-  src?: StaticImageData // for static media
-  videoClassName?: string
-}
-
 export type NavItem = {
   title: string
   href: string
@@ -45,7 +29,6 @@ export type SidebarNavItem = {
     }
 )
 
-
 export type SiteConfig = {
   name: string
   description: string
@@ -67,34 +50,18 @@ export type FooterNavItem = SidebarNavItem
 export type FooterConfig = {
     footerNav: NavItem[]
 }
-
-// export type DashboardConfig = {
-//   mainNav: MainNavItem[]
-//   sidebarNav: SidebarNavItem[]
-// }
-
 export interface MainNavProps {
   items?: MainNavItem[];
   children?: React.ReactNode;
 }
-// export type DashboardConfig = {
-//   mainNav: MainNavItem[]
-//   sidebarNav: SidebarNavItem[]
-// }
-
-// export type SubscriptionPlan = {
-//   name: string
-//   description: string
-//   stripePriceId: string
-// }
-
-// export type UserSubscriptionPlan = SubscriptionPlan &
-//   Pick<User, "stripeCustomerId" | "stripeSubscriptionId"> & {
-//     stripeCurrentPeriodEnd: number
-//     isPro: boolean
-//   }
 
   export type DocsConfig = {
     mainNav: MainNavItem[]
     sidebarNav: SidebarNavItem[]
   }
+
+export interface Sound {
+    name: string;
+    url: string;
+    icon: Icon;
+}
