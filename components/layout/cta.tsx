@@ -14,9 +14,7 @@ export const CTA = () => {
                         </p>
                         <h2
                             className={cn(
-                                "text-transparent bg-clip-text",
                                 "text-7xl md:text-8xl font-bold tracking-tighter",
-                                " bg-gradient-to-tr from-primary via-orange-950 to-orange-200"
                             )}
                         >
                             Let me help you create the life you deserve.
