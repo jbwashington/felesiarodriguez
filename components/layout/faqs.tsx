@@ -8,7 +8,7 @@ import { FAQsTable } from "./faqs-table";
 
 export const FAQs = () => {
     return (
-        <div className="max-w-screen-md mx-auto space-y-2 p-6">
+        <div className="max-w-screen-lg mx-auto space-y-2 p-6">
             <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
                     <AccordionTrigger>What is therapy?</AccordionTrigger>

@@ -9,7 +9,7 @@ import { FooterNavItem } from "@/types";
 import { buttonVariants } from "../ui/button";
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
     return (
-        <footer className={cn("max-w-screen-md mx-auto", className)}>
+        <footer className={cn("max-w-screen-lg mx-auto", className)}>
             <div className="container flex flex-col md:h-24 space-y-4 pb-6">
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     <Icons.therapistFelesiaLogoMin className="w-1/3 md:w-1/2 h-fit mx-auto md:mr-auto" />
