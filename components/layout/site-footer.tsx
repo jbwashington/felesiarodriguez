@@ -88,9 +88,6 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
                     </Link>
                 </div>
                 <div className="mx-auto "></div>
-                <div className="mx-auto">
-                    <ModeToggle />
-                </div>
                 <Link
                     className={buttonVariants({
                         variant: "link",
