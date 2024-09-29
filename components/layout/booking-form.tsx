@@ -29,8 +29,8 @@ export const BookingForm = () => {
                         "cal-text-emphasis": "hsl(220 10% 97.8%;)", // accent-foreground
                         "cal-text-muted": "hsl(220 10% 55.6%)", // muted-foreground
                         "cal-bg": "hsl(228 98.75% 98.28%)", // background
-                        "cal-bg-emphasis": "hsl(220 50% 16.8%)", // accent
-                        "cal-bg-muted": "hsl(220 50% 16.8%)", // muted
+                        "cal-bg-emphasis": "hsl(228 98.75% 98.28%)", // accent
+                        "cal-bg-muted": "hsl(228 98.75% 98.28%)", // muted
                         scrollbar: "rounded",
                     },
                 },
