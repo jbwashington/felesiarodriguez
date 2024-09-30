@@ -1,5 +1,5 @@
 import { DropdownMenuItem } from "@/components/ui/dropdown-menu";
-import { useVideoStore } from "@/hooks/use-video-store";
+import { useVideoStore } from "@/store/use-video";
 import { Video } from "@/types";
 
 export const VideoItem = ({ video }: { video: Video }) => {

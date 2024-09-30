@@ -4,7 +4,7 @@ import Link from "next/link";
 import { buttonVariants } from "../ui/button";
 import { Icons } from "../ui/icons";
 import { cn } from "@/lib/utils";
-import { useVideoStore } from "@/hooks/use-video-store";
+import { useVideoStore } from "@/store/use-video";
 
 export const CTA = () => {
 
