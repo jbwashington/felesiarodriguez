@@ -10,6 +10,8 @@ const config: Config = {
     theme: {
         extend: {
             backgroundImage: {
+                "beach-video": "url('/videos/beach.mp4')",
+                "forest-video": "url('/videos/forest.mp4')",
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
                 "gradient-conic":
                     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
