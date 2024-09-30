@@ -47,6 +47,7 @@ import {
     GlassWater,
     Play,
     Pause,
+    Palmtree,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -73,6 +74,7 @@ export const Icons = {
     arrowRight: ArrowRight,
     play: Play,
     pause: Pause,
+    palmtree: Palmtree,
     help: HelpCircle,
     pizza: Pizza,
     sun: SunMedium,

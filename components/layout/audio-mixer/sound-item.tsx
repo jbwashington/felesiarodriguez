@@ -8,7 +8,7 @@ import { Slider } from "@/components/ui/slider";
 import { cn } from "@/lib/utils";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
-export const Sound = ({ sound }: { sound: SoundType }) => {
+export const SoundItem = ({ sound }: { sound: SoundType }) => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [volume, setVolume] = useState(50);
 
