@@ -49,6 +49,8 @@ import {
     Pause,
     Palmtree,
     Trees,
+    Paintbrush,
+    Lamp,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -80,6 +82,8 @@ export const Icons = {
     pizza: Pizza,
     sun: SunMedium,
     forest: Trees,
+    paint: Paintbrush,
+    lamp: Lamp,
     moon: Moon,
     laptop: Laptop,
     target: Target,
