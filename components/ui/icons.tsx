@@ -48,6 +48,7 @@ import {
     Play,
     Pause,
     Palmtree,
+    Trees,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -78,6 +79,7 @@ export const Icons = {
     help: HelpCircle,
     pizza: Pizza,
     sun: SunMedium,
+    forest: Trees,
     moon: Moon,
     laptop: Laptop,
     target: Target,

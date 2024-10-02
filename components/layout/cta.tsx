@@ -5,12 +5,25 @@ import { buttonVariants } from "../ui/button";
 import { Icons } from "../ui/icons";
 import { cn } from "@/lib/utils";
 import { useVideoStore } from "@/store/use-video";
+import { useEffect, useRef } from "react";
 
 export const CTA = () => {
 
     const video = useVideoStore((state) => state.video);
 
     console.log(video)
+
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    useEffect(() => {
+        if (videoRef.current && video) {
+            const source = videoRef.current.querySelector("source");
+            if (source) {
+                source.src = video.url;
+                videoRef.current.load();
+            }
+        }
+    }, [video]);
 
     return (
         <section className="w-full">
@@ -20,6 +33,7 @@ export const CTA = () => {
                         <div className="absolute -z-10"></div>
                         <video
                             className="absolute inset-0 object-cover w-full h-full -z-20"
+                            ref={videoRef}
                             autoPlay
                             loop
                             muted
