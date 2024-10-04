@@ -68,6 +68,7 @@ export interface Sound {
 
 export interface Video {
     name: string;
+    slug: string;
     url: string;
     icon: Icon;
 }

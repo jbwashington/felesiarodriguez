@@ -30,7 +30,14 @@ export const CTA = () => {
             <div className="relative flex items-center justify-center h-screen overflow-hidden -mt-20">
                 {video && (
                     <>
-                        <div className="absolute inset-0 object-cover w-full h-full -z-10"></div>
+                        <div
+                            className={cn(
+                                "h-full w-[100vw]",
+                                "bg-transparent",
+                                "absolute -z-20",
+                                video.slug,
+                            )}
+                        ></div>
                         <video
                             className="absolute inset-0 object-cover w-full h-full -z-20"
                             ref={videoRef}
