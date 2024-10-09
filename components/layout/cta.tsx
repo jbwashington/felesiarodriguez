@@ -8,10 +8,9 @@ import { useVideoStore } from "@/store/use-video";
 import { useEffect, useRef } from "react";
 
 export const CTA = () => {
-
     const video = useVideoStore((state) => state.video);
 
-    console.log(video)
+    console.log(video);
 
     const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -35,7 +34,7 @@ export const CTA = () => {
                                 "h-full w-[100vw]",
                                 "bg-transparent",
                                 "absolute -z-20",
-                                video.slug,
+                                video.slug
                             )}
                         ></div>
                         <video
@@ -52,12 +51,13 @@ export const CTA = () => {
                 )}
                 <div className="px-4 md:px-6 max-w-screen-lg">
                     <div className="flex flex-col space-y-6">
-                        <p className="font-medium text-md font-mono uppercase text-muted-foreground">
+                        <p className="font-medium text-md font-mono uppercase text-muted-foreground border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 w-fit px-2">
                             Individuals and couples
                         </p>
                         <h2
                             className={cn(
-                                "text-7xl md:text-8xl font-bold tracking-tighter"
+                                "text-7xl md:text-8xl font-bold tracking-tighter",
+                                "border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 w-fit px-2"
                             )}
                         >
                             Let me help you create the life you deserve.
