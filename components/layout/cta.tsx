@@ -44,6 +44,7 @@ export const CTA = () => {
                             autoPlay
                             loop
                             muted
+                            playsInline
                         >
                             <source src={video.url} type="video/mp4" />
                         </video>
