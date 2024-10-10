@@ -40,10 +40,12 @@ export const CTA = () => {
                         <video
                             className="absolute inset-0 object-cover w-full h-full -z-20"
                             ref={videoRef}
+                            controls
                             autoPlay
                             loop
                             muted
                             playsInline
+                            disablePictureInPicture
                         >
                             <source src={video.url} type="video/mp4" />
                         </video>
