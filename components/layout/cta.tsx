@@ -53,20 +53,16 @@ export const CTA = () => {
                 )}
                 <div className="px-4 md:px-6 max-w-screen-lg">
                     <div className="flex flex-col space-y-6">
-                        <p className="font-medium text-md font-mono uppercase text-muted-foreground border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 w-fit px-2">
-                            Individuals and couples
-                        </p>
                         <h2
                             className={cn(
                                 "text-7xl md:text-8xl font-bold tracking-tighter",
                                 "border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 w-fit px-2"
                             )}
                         >
-                            Let me help you create the life you deserve.
+                            I’m honored to accompany you on your journey
                         </h2>
-                        <p className="leading-relaxed text-muted-foreground text-md">
-                            Online therapy services for the NYC area and all
-                            over New York State.
+                        <p className="font-medium text-md font-mono uppercase text-muted-foreground border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 w-fit px-2">
+                            Let&apos;s figure it out together
                         </p>
                         <Link
                             href="/booking"
