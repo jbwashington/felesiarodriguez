@@ -6,29 +6,35 @@ import {
 } from "@/components/ui/accordion";
 import { FAQsTable } from "./faqs-table";
 
+// TODO: make indent and font consistent
 export const FAQs = () => {
     return (
         <div className="max-w-screen-lg mx-auto space-y-2 p-6">
             <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
-                    <AccordionTrigger>What is therapy?</AccordionTrigger>
+                    <AccordionTrigger>
+                        <h3 className="text-2xl">What is therapy?</h3>
+                    </AccordionTrigger>
                     <AccordionContent>
-                        Therapy is a consistent and reliable time that is set
-                        aside to talk about issues that are important to you
-                        while having a specially trained person listen and
-                        reflect. Your therapist will highlight thought patterns
-                        and underlying beliefs that might be keeping you from
-                        achieving your desired goals. Therapy is a collaborative
-                        event and it requires an active role from both the
-                        client and the therapist. Together, you and your
-                        therapist together co-create a therapeutic space for you
-                        to express your thoughts and feelings, creating a
-                        launch-pad for self understanding. It is not uncommon
-                        for clients to look for answers or advice from their
-                        therapist, but they will eventually learn that they have
-                        the answers already themselves. It is your
-                        therapist&apos;s job to help you uncover them and find
-                        lasting change.
+                        <p className="font-serif leading-loose text-xl ml-20">
+                            Therapy is a consistent and reliable time that is
+                            set aside to talk about issues that are important to
+                            you while having a specially trained person listen
+                            and reflect. Your therapist will highlight thought
+                            patterns and underlying beliefs that might be
+                            keeping you from achieving your desired goals.
+                            Therapy is a collaborative event and it requires an
+                            active role from both the client and the therapist.
+                            Together, you and your therapist together co-create
+                            a therapeutic space for you to express your thoughts
+                            and feelings, creating a launch-pad for self
+                            understanding. It is not uncommon for clients to
+                            look for answers or advice from their therapist, but
+                            they will eventually learn that they have the
+                            answers already themselves. It is your
+                            therapist&apos;s job to help you uncover them and
+                            find lasting change.
+                        </p>
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">

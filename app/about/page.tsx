@@ -36,7 +36,7 @@ export default function AboutPage() {
                     stages of life. In addition to a fulfilling career in the
                     field of forensic social work, she is energized by building
                     durable relationships with individual therapy clients as a
-                    private clinician.
+                    private clinician. <br />
                 </p>
                 <p className=" md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                     She identifies as a neurodivergent parent, a Latina, and a

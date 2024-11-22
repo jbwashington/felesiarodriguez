@@ -1,8 +1,16 @@
+'use client'
+
+import { useEffect } from "react";
 import { About } from "@/components/layout/about";
 import { CTA } from "@/components/layout/cta";
 import { FAQs } from "@/components/layout/faqs";
 import { BookASession } from "@/components/layout/book-a-session";
+import { gradient } from "@/components/layout/Gradient";
 export default function HomePage() {
+    useEffect(() => {
+        gradient.initGradient("#gradient-canvas");
+    }, []);
+
     return (
         <div className="space-y-8">
             <CTA />
@@ -15,13 +23,12 @@ export default function HomePage() {
             </h2>
             <FAQs />
             <div className="px-4 py-auto max-w-screen-lg space-y-8 mx-auto">
-                <h2 className="text-6xl font-bold tracking-tighter  max-w-screen-lg  mx-auto">
-                    I&apos;m honored to accompany you on your journey.
+                <h2 className="text-8xl font-bold tracking-tighter  max-w-screen-lg  mx-auto">
+                    Let&apos;s figure it out together.
                 </h2>
                 <p className="leading-relaxed text-xl text-muted-foreground max-w-screen-lg mx-auto">
-                    Let&apos;s figure it out together. Schedule a{" "}
-                    <b>free 15 minute consultation</b> to discuss your needs and
-                    goals.
+                    Schedule a <b>free 15 minute consultation</b> to discuss
+                    your needs and goals.
                 </p>
                 <BookASession />
             </div>

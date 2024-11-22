@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
@@ -59,19 +59,16 @@ export const CTA = () => {
                                 "border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 w-fit px-2"
                             )}
                         >
-                            I’m honored to accompany you on your journey
+                            I’m honored to accompany you on your journey.
                         </h2>
-                        <p className="font-medium text-md font-mono uppercase text-muted-foreground border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 w-fit px-2">
-                            Let&apos;s figure it out together
-                        </p>
                         <Link
-                            href="/booking"
+                            href="#my-approach"
                             className={buttonVariants({
                                 variant: "default",
                                 className: "capitalize w-fit",
                             })}
                         >
-                            Book a free consultation <Icons.chevronRight />
+                            Learn more <Icons.chevronRight />
                         </Link>
                     </div>
                 </div>
