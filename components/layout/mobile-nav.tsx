@@ -48,7 +48,7 @@ export function MobileNav({ items, children }: MobileNavProps) {
                             size: "lg",
                             className: "w-full capitalize",
                         })}
-                        href="/contact"
+                        href="#contact"
                     >
                         Book a consultation
                     </Link>
