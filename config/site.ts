@@ -30,37 +30,37 @@ export const siteConfig: SiteConfig = {
     mainNav: [
         {
             title: "About Me",
-            href: "/about",
+            href: "#about-me",
         },
         {
             title: "My Approach",
-            href: "/my-approach"
+            href: "#my-approach"
         },
         {
             title: "FAQs",
-            href: "/faqs"
+            href: "#faqs"
         },
         {
             title: "Contact",
-            href: "/contact"
+            href: "#contact"
         },
     ],
   footerNav: [
         {
             title: "About Me",
-            href: "/about",
+            href: "#about-me",
         },
         {
             title: "My Approach",
-            href: "/my-approach"
+            href: "#my-approach"
         },
         {
             title: "FAQs",
-            href: "/faqs"
+            href: "#faqs"
         },
         {
             title: "Contact",
-            href: "/contact"
+            href: "#contact"
         },
   ],
 };

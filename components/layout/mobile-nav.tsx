@@ -4,7 +4,7 @@ import Link from "next/link";
 import { MainNavItem } from "@/types";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import { useLockBody } from "@/hooks/use-lock-body";
+// import { useLockBody } from "@/hooks/use-lock-body";
 import { Icons } from "../ui/icons";
 import { buttonVariants } from "../ui/button";
 
@@ -14,7 +14,7 @@ interface MobileNavProps {
 }
 
 export function MobileNav({ items, children }: MobileNavProps) {
-    useLockBody();
+    // useLockBody();
 
     return (
         <div

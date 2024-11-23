@@ -39,12 +39,12 @@ export const BookingForm = () => {
     }, []);
 
     return (
-        <>
+        <div id="contact">
             <Cal
                 namespace="15min"
                 config={{ layout: "month_view" }}
                 calLink="therapistfelesia/15min"
             />
-        </>
+        </div>
     );
 };

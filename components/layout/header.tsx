@@ -2,8 +2,6 @@ import { MainNav } from "./main-nav";
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
-import { RelaxButton } from "./relax-button";
-import { Separator } from "../ui/separator";
 
 export default function Header() {
     return (
@@ -11,7 +9,7 @@ export default function Header() {
             <div className="container flex min-h-fit h-14 md:h-32 max-w-screen-xl mx-auto items-center justify-between">
                 <MainNav items={siteConfig.mainNav} />
                 <Link
-                    href="/contact"
+                    href="#contact"
                     className={buttonVariants({
                         variant: "outline",
                         size: "sm",

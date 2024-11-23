@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 export const CTA = () => {
     return (
-        <section className="w-full">
+        <section id="cta" className="w-full">
             <div className="relative flex items-center justify-center h-screen overflow-hidden -mt-20">
                 <div className="px-4 md:px-6 max-w-screen-lg">
                     <div className="flex flex-col space-y-6">
