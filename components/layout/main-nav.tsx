@@ -60,7 +60,7 @@ export function MainNav({ items, children }: MainNavProps) {
                 ) : (
                     <Icons.therapistFelesiaLogoMin />
                 )}
-                <span className="font-bold">Menu</span>
+                <span className="font-serif">Menu</span>
             </button>
             {showMobileMenu && items && (
                 <MobileNav items={items}>{children}</MobileNav>

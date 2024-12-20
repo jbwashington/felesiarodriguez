@@ -7,6 +7,7 @@ import {
 import { FAQsTable } from "./faqs-table";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { H2 } from "../typography/headings";
 
 interface FAQItem {
     question: string;
@@ -166,9 +167,9 @@ const faqItems: FAQItem[] = [
 export const FAQs = () => {
     return (
         <div id="faqs" className="max-w-screen-lg mx-auto space-y-2 p-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl capitalize text-center py-6">
+            <H2>
                 Frequently asked questions
-            </h2>
+            </H2>
             <Accordion type="single" collapsible>
                 {faqItems.map((item, index) => (
                     <AccordionItem key={index} value={`item-${index + 1}`}>

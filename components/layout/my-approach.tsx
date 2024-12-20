@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { H2, P } from "../typography/headings";
 
 interface MyApproachItem {
     image: {
@@ -44,9 +45,9 @@ export const MyApproach = () => {
             id="my-approach"
             className="max-w-screen-md mx-auto space-y-2 p-6"
         >
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl capitalize text-center py-6">
+            <H2>
                 My Approach
-            </h2>
+            </H2>
             <div className="flex flex-col justify-center space-y-4 max-w-screen-lg">
                 {myApproachItems.map((item, index) => (
                     <div key={index} className="grid gap-8">
@@ -59,9 +60,9 @@ export const MyApproach = () => {
                         />
                         <div className="leading-loose text-xl text-muted-foreground max-w-screen-lg font-serif space-y-4">
                             {item.paragraphs.map((paragraph, index) => (
-                                <p key={index} className={paragraph.className}>
+                                <P key={index} className={paragraph.className}>
                                     {paragraph.text}
-                                </p>
+                                </P>
                             ))}
                         </div>
                     </div>

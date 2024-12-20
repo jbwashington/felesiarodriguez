@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { H2, P } from "../typography/headings";
 interface AboutItem {
     image: {
         src: string;
@@ -59,14 +60,14 @@ export const About = () => {
                         <div className="leading-loose text-xl max-w-screen-lg space-y-4">
                             {item.sections.map((section, sectionIndex) => (
                                 <div key={sectionIndex} id={section.id}>
-                                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl capitalize text-center py-6">
+                                    <H2>
                                         {section.title}
-                                    </h2>
-                                    <p className={section.className}>
+                                    </H2>
+                                    <P className={section.className}>
                                         {typeof section.text === "string"
                                             ? section.text
                                             : section.text.join(" ")}
-                                    </p>
+                                    </P>
                                 </div>
                             ))}
                         </div>
