@@ -13,7 +13,7 @@ export const CTA = () => {
                     <div className="flex flex-col space-y-6">
                         <h2
                             className={cn(
-                                "text-7xl md:text-8xl font-bold tracking-tighter",
+                                "text-5xl md:text-8xl font-semibold leading-relaxed",
                                 "border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 w-fit px-2"
                             )}
                         >

@@ -23,7 +23,9 @@ export function MobileNav({ items, children }: MobileNavProps) {
             <div className="relative z-20 grid gap-6 rounded-md bg-popover p-4 text-popover-foreground shadow-md items-center justify-center">
                 <Link href="/" className="flex flex-col items-center">
                     <Icons.therapistFelesiaLogoMin className="h-fit w-1/2 py-8" />
-                    <h1 className="font-bold text-2xl font-serif">{siteConfig.name}</h1>
+                    <h1 className="font-bold text-2xl font-serif">
+                        {siteConfig.name}
+                    </h1>
                 </Link>
                 <Separator />
                 <nav className="grid gap-2 w-full">
@@ -33,8 +35,9 @@ export function MobileNav({ items, children }: MobileNavProps) {
                             href={item.disabled ? "#" : item.href}
                             className={cn(
                                 "w-full rounded-md p-2 text-sm font-medium text-center hover:underline capitalize",
-                                item.disabled && "cursor-not-allowed opacity-60",
-                                'font-serif uppercase'
+                                item.disabled &&
+                                    "cursor-not-allowed opacity-60",
+                                "font-serif uppercase"
                             )}
                         >
                             {item.title}
