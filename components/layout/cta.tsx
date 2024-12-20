@@ -13,7 +13,7 @@ export const CTA = () => {
                     <div className="flex flex-col space-y-6">
                         <h2
                             className={cn(
-                                "text-5xl md:text-8xl font-semibold leading-relaxed",
+                                "text-5xl md:text-8xl leading-relaxed font-serif",
                                 "border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 w-fit px-2"
                             )}
                         >
@@ -22,11 +22,11 @@ export const CTA = () => {
                         <Link
                             href="#my-approach"
                             className={buttonVariants({
-                                variant: "default",
-                                className: "capitalize w-fit",
+                                variant: "ghost",
+                                className: "capitalize w-fit font-serif",
                             })}
                         >
-                            Learn more <Icons.chevronRight />
+                            Learn more <Icons.chevronRight className="ml-1 align-middle justify-center h-4 w-4 shrink-0" />
                         </Link>
                     </div>
                 </div>
