@@ -47,7 +47,7 @@ export function MobileNav({ items, children }: MobileNavProps) {
                 <div className="w-full">
                     <Link
                         className={buttonVariants({
-                            variant: "default",
+                            variant: "outline",
                             size: "lg",
                             className: "w-full capitalize",
                         })}
